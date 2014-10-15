@@ -13,7 +13,8 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:background="@color/perple"
-        android:text="@string/funny" />
+        android:text="@string/funny"
+        android:textColor="@color/white" />
 
     <TextView
         android:id="@+id/boringTextView"
@@ -22,6 +23,23 @@
         android:layout_above="@+id/firstButton"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="77dp"
-        android:text="@string/sillyString" />
+        android:text="@string/funny" />
+
+    <Button
+        android:id="@+id/textButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:text="@string/knowledge4" />
+
+    <TextView
+        android:id="@+id/numberOfKnowledge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/boringTextView"
+        android:layout_centerHorizontal="true"
+        android:text="@string/stringNumber" />
 
 </RelativeLayout>

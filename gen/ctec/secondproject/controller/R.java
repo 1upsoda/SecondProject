@@ -1114,6 +1114,7 @@ containing a value of this type.
         public static final int never=0x7f050009;
         public static final int none=0x7f050010;
         public static final int normal=0x7f050000;
+        public static final int numberOfKnowledge=0x7f050040;
         public static final int progress_circular=0x7f050018;
         public static final int progress_horizontal=0x7f050019;
         public static final int radio=0x7f05002f;
@@ -1134,6 +1135,7 @@ containing a value of this type.
         public static final int split_action_bar=0x7f05001e;
         public static final int submit_area=0x7f050039;
         public static final int tabMode=0x7f050002;
+        public static final int textButton=0x7f05003f;
         public static final int title=0x7f05002b;
         public static final int top_action_bar=0x7f050020;
         public static final int up=0x7f050021;
@@ -1236,8 +1238,34 @@ containing a value of this type.
         public static final int abc_shareactionprovider_share_with_application=0x7f0a000b;
         public static final int app_name=0x7f0a000d;
         public static final int funny=0x7f0a000e;
+        public static final int knowledge1=0x7f0a0011;
+        public static final int knowledge10=0x7f0a001a;
+        public static final int knowledge11=0x7f0a001b;
+        public static final int knowledge12=0x7f0a001c;
+        public static final int knowledge13=0x7f0a001d;
+        public static final int knowledge14=0x7f0a001e;
+        public static final int knowledge15=0x7f0a001f;
+        public static final int knowledge16=0x7f0a0020;
+        public static final int knowledge17=0x7f0a0021;
+        public static final int knowledge18=0x7f0a0022;
+        public static final int knowledge19=0x7f0a0023;
+        public static final int knowledge2=0x7f0a0012;
+        public static final int knowledge20=0x7f0a0024;
+        public static final int knowledge21=0x7f0a0025;
+        public static final int knowledge22=0x7f0a0026;
+        public static final int knowledge23=0x7f0a0027;
+        public static final int knowledge24=0x7f0a0028;
+        public static final int knowledge25=0x7f0a0029;
+        public static final int knowledge3=0x7f0a0013;
+        public static final int knowledge4=0x7f0a0014;
+        public static final int knowledge5=0x7f0a0015;
+        public static final int knowledge6=0x7f0a0016;
+        public static final int knowledge7=0x7f0a0017;
+        public static final int knowledge8=0x7f0a0018;
+        public static final int knowledge9=0x7f0a0019;
         public static final int notherString=0x7f0a000f;
         public static final int sillyString=0x7f0a0010;
+        public static final int stringNumber=0x7f0a002a;
     }
     public static final class style {
         /** 
