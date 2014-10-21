@@ -8,6 +8,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 public class WeirdActivity extends Activity
@@ -15,6 +16,8 @@ public class WeirdActivity extends Activity
 /**
  * sets up the buttons as other names, as well as starting the lists for creation
  */
+	private Button whiteButton;
+	private RelativeLayout appLayout;
 	private Button appButton;
 	private Button textButton;
 	private TextView appText;
@@ -32,6 +35,8 @@ public class WeirdActivity extends Activity
 		/**
 		 * actually allows the buttons to be called
 		 */
+		whiteButton = (Button) findViewById(R.id.whiteBackground);
+		appLayout = (RelativeLayout) findViewById(R.id.appLayout);
 		textNumber = (TextView) findViewById(R.id.numberOfKnowledge);
 		textButton = (Button) findViewById(R.id.textButton);
 		appButton = (Button) findViewById(R.id.firstButton);
@@ -86,6 +91,21 @@ public class WeirdActivity extends Activity
 		textList.add(R.string.knowledge23);
 		textList.add(R.string.knowledge24);
 		textList.add(R.string.knowledge25);
+		textList.add(R.string.knowledge26);
+		textList.add(R.string.knowledge27);
+		textList.add(R.string.knowledge28);
+		textList.add(R.string.knowledge29);
+		textList.add(R.string.knowledge30);
+		textList.add(R.string.knowledge31);
+		textList.add(R.string.knowledge32);
+		textList.add(R.string.knowledge33);
+		textList.add(R.string.knowledge34);
+		textList.add(R.string.knowledge35);
+		textList.add(R.string.knowledge36);
+		textList.add(R.string.knowledge37);
+		textList.add(R.string.knowledge38);
+		textList.add(R.string.knowledge39);
+		textList.add(R.string.knowledge40);
 	}
 	/**
 	 * adds the color strings to the list
@@ -96,7 +116,6 @@ public class WeirdActivity extends Activity
 		colorList.add(R.color.perple);
 		colorList.add(R.color.uglyBrown);
 		colorList.add(R.color.superRed);
-		
 		
 	}
 	/**
@@ -122,7 +141,14 @@ public class WeirdActivity extends Activity
 			}
 		});
 		
-		
+		whiteButton.setOnClickListener(new View.OnClickListener()
+		{
+			
+			public void onClick(View currentView)
+			{
+				appLayout.setBackgroundResource(R.color.white);
+			}
+		});
 		
 		
 		appButton.setOnClickListener(new View.OnClickListener()
@@ -135,6 +161,7 @@ public class WeirdActivity extends Activity
 				int randomIndex = (int) (Math.random() * colorList.size());
 				
 				appButton.setBackgroundResource(colorList.get(randomIndex));
+				appLayout.setBackgroundResource(colorList.get(randomIndex));
 			}
 		});
 	}

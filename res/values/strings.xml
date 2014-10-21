@@ -28,12 +28,23 @@
     <string name="knowledge22">&quot;Nothing in the entire universe is random&quot;</string>
     <string name="knowledge23">&quot;Even the quantum level is ran by physics saying exactly what to do.&quot;</string>
     <string name="knowledge24">&quot;All your thoughts are belong to quantum&quot;</string>
-    <string name="knowledge25">This quote does not have quotes around it</string>
+    <string name="knowledge25">&quot;''This quote does not have quotes around it''&quot;</string>
     <string name="stringNumber">Knowledge #0</string>
-    <string name="knowledge26">''This has quotes around it''</string>
+    <string name="knowledge26">More knowledge (it broke code)</string>
     <string name="knowledge27">/)^3^(\</string>
     <string name="knowledge28">O.O</string>
-    <string name="knowledge29">this is the only quote that doesn't start with a capital letter, maybe</string>
+    <string name="knowledge29">this is the only quote that does not start with a capital letter, maybe</string>
     <string name="knowledge30">You have taken 1 damage from this quote</string>
+    <string name="knowledge31">This took longer than it should have</string>
+    <string name="knowledge32">Ima stop at 100</string>
+    <string name="knowledge33">I almost destroyed everything writing this line</string>
+    <string name="knowledge34">Rainbow Dash is infact, awesome</string>
+    <string name="knowledge35">IW2CIRD</string>
+    <string name="knowledge36">If at first you do not succeed, give giving up a chance</string>
+    <string name="knowledge37">Place Holder</string>
+    <string name="knowledge38">FATALERROR:EXCEPTIONMAIN</string>
+    <string name="knowledge39">Everything will die, in due time</string>
+    <string name="knowledge40">You have been healed 1 health</string>
+    <string name="whiteBackground">Paint it White!</string>
 
 </resources>

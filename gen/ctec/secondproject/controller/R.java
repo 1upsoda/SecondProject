@@ -1140,6 +1140,7 @@ containing a value of this type.
         public static final int top_action_bar=0x7f050020;
         public static final int up=0x7f050021;
         public static final int useLogo=0x7f050003;
+        public static final int whiteBackground=0x7f050041;
         public static final int withText=0x7f05000c;
     }
     public static final class integer {
@@ -1256,8 +1257,23 @@ containing a value of this type.
         public static final int knowledge23=0x7f0a0027;
         public static final int knowledge24=0x7f0a0028;
         public static final int knowledge25=0x7f0a0029;
+        public static final int knowledge26=0x7f0a002b;
+        public static final int knowledge27=0x7f0a002c;
+        public static final int knowledge28=0x7f0a002d;
+        public static final int knowledge29=0x7f0a002e;
         public static final int knowledge3=0x7f0a0013;
+        public static final int knowledge30=0x7f0a002f;
+        public static final int knowledge31=0x7f0a0030;
+        public static final int knowledge32=0x7f0a0031;
+        public static final int knowledge33=0x7f0a0032;
+        public static final int knowledge34=0x7f0a0033;
+        public static final int knowledge35=0x7f0a0034;
+        public static final int knowledge36=0x7f0a0035;
+        public static final int knowledge37=0x7f0a0036;
+        public static final int knowledge38=0x7f0a0037;
+        public static final int knowledge39=0x7f0a0038;
         public static final int knowledge4=0x7f0a0014;
+        public static final int knowledge40=0x7f0a0039;
         public static final int knowledge5=0x7f0a0015;
         public static final int knowledge6=0x7f0a0016;
         public static final int knowledge7=0x7f0a0017;
@@ -1266,6 +1282,7 @@ containing a value of this type.
         public static final int notherString=0x7f0a000f;
         public static final int sillyString=0x7f0a0010;
         public static final int stringNumber=0x7f0a002a;
+        public static final int whiteBackground=0x7f0a003a;
     }
     public static final class style {
         /** 
