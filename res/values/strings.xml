@@ -46,5 +46,8 @@
     <string name="knowledge39">Everything will die, in due time</string>
     <string name="knowledge40">You have been healed 1 health</string>
     <string name="whiteBackground">Paint it White!</string>
+    <string name="message">Message</string>
+    <string name="phoneNumber">Phone Number</string>
+    <string name="sendMessageText">Send</string>
 
 </resources>

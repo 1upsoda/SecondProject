@@ -4,12 +4,11 @@ import java.util.ArrayList;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.telephony.SmsManager;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
-import android.widget.RelativeLayout;
-import android.widget.TextView;
+import android.widget.*;
 
 public class WeirdActivity extends Activity
 {
@@ -25,9 +24,12 @@ public class WeirdActivity extends Activity
 	private ArrayList<Integer> colorList;
 	private ArrayList<Integer> textList;
 	private int knowledgeNumber = 0;
-	
+	private EditText phoneNumber;
+	private EditText messageText;
+	private Button sendMessage;
 
 	
+	@Override
 	protected void onCreate(Bundle savedInstanceState)
 	{
 		super.onCreate(savedInstanceState);
@@ -35,6 +37,10 @@ public class WeirdActivity extends Activity
 		/**
 		 * actually allows the buttons to be called
 		 */
+		phoneNumber = (EditText) findViewById(R.id.phoneNumber);
+		messageText = (EditText) findViewById(R.id.messageText);
+		sendMessage = (Button) findViewById(R.id.sendMessage);
+		
 		whiteButton = (Button) findViewById(R.id.whiteBackground);
 		appLayout = (RelativeLayout) findViewById(R.id.appLayout);
 		textNumber = (TextView) findViewById(R.id.numberOfKnowledge);
@@ -129,6 +135,7 @@ public class WeirdActivity extends Activity
 		{
 			
 			
+			@Override
 			public void onClick(View currentView)
 			{
 				//button click stuff here
@@ -144,6 +151,7 @@ public class WeirdActivity extends Activity
 		whiteButton.setOnClickListener(new View.OnClickListener()
 		{
 			
+			@Override
 			public void onClick(View currentView)
 			{
 				appLayout.setBackgroundResource(R.color.white);
@@ -151,10 +159,37 @@ public class WeirdActivity extends Activity
 		});
 		
 		
+		sendMessage.setOnClickListener(new View.OnClickListener()
+		{
+			@Override
+			public void onClick(View currentView)
+			{
+				try
+				{
+					String contact = phoneNumber.getText().toString();
+					String message = messageText.getText().toString();
+					sendSMS(contact, message);
+					
+					Toast.makeText(currentView.getContext(), "message sent", Toast.LENGTH_SHORT).show();
+				}
+				catch(Exception currentException)
+				{
+					Toast.makeText(currentView.getContext(), "message not sent", Toast.LENGTH_LONG).show();
+					Toast.makeText(currentView.getContext(), currentException.getMessage(), Toast.LENGTH_LONG).show();
+				}
+				
+			}
+		});	
+			
+		
+		
+		
+		
 		appButton.setOnClickListener(new View.OnClickListener()
 		{
 			
 		
+			@Override
 			public void onClick(View currentView)
 			{
 				//button click stuff here
@@ -165,5 +200,10 @@ public class WeirdActivity extends Activity
 			}
 		});
 	}
-	
+	private void sendSMS(String messageAdress, String messageContent)
+	{
+		SmsManager mySMSManager = SmsManager.getDefault();
+		mySMSManager.sendTextMessage(messageAdress, null, messageContent, null, null);
+		
+	}
 }
